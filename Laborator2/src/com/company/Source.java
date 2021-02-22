@@ -34,6 +34,20 @@ public class Source extends Problem {
 
     }
 
+    @Override
+    public void info() {
+        System.out.println(this.name);
+        System.out.println(" ");
+        System.out.println(this.supply);
+        System.out.println(" ");
+        System.out.println(this.type);
+        System.out.println(" ");
+
+
+
+
+    }
+
     public SourceType getType() {
         return type;
     }

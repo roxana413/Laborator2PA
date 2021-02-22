@@ -2,8 +2,8 @@ package com.company;
 
 public class Destination extends Problem {
     public String name;
-    public String demand;
-    public Destination(String name, String demand) {
+    public int demand;
+    public Destination(String name, int  demand) {
         this.name = name;
         this.demand = demand;
     }
@@ -23,11 +23,19 @@ public class Destination extends Problem {
         this.name = name;
     }
 
-    public String getDemand() {
+    public int  getDemand() {
         return demand;
     }
 
-    public void setDemand(String demand) {
+    public void setDemand(int demand) {
         this.demand = demand;
+    }
+    public void info()
+    {
+        System.out.println(this.name);
+        System.out.println(" ");
+        System.out.println(this.demand);
+        System.out.println(" ");
+
     }
 }

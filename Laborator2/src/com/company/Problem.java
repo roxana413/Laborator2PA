@@ -6,5 +6,10 @@ public abstract class Problem {
         return "Problem{}";
     }
 
-    public Problem (){}
+    public Problem() {
+    }
+
+    public abstract void info() ;
+
+
 }
