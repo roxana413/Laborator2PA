@@ -1,8 +1,8 @@
 package com.company;
-public class Source extends Problem {
-    public SourceType type;
-    public String     name;
-    public int        supply;
+public class Source  {
+    private SourceType type;
+    private String     name;
+    private int        supply;
 
 
 
@@ -34,14 +34,14 @@ public class Source extends Problem {
 
     }
 
-    @Override
+
     public void info() {
-        System.out.println(this.name);
-        System.out.println(" ");
-        System.out.println(this.supply);
-        System.out.println(" ");
-        System.out.println(this.type);
-        System.out.println(" ");
+        System.out.print(this.name );
+        System.out.print(' ');
+        System.out.print(this.supply );
+        System.out.print(' ');
+        System.out.print(this.type );
+        System.out.println(' ');
 
 
 

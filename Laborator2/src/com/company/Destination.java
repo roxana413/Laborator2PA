@@ -1,12 +1,19 @@
 package com.company;
 
-public class Destination extends Problem {
-    public String name;
-    public int demand;
-    public Destination(String name, int  demand) {
+public class Destination {
+   private String name;
+   private int    demand;
+   private int count = 0;
+
+
+
+    public Destination(String name, int demand) {
         this.name = name;
         this.demand = demand;
     }
+
+
+
 
     @Override
     public String toString() {
@@ -15,6 +22,7 @@ public class Destination extends Problem {
 
     public Destination() {
     }
+
     public String getName() {
         return name;
     }
@@ -23,19 +31,19 @@ public class Destination extends Problem {
         this.name = name;
     }
 
-    public int  getDemand() {
+    public int getDemand() {
         return demand;
     }
 
     public void setDemand(int demand) {
         this.demand = demand;
     }
-    public void info()
-    {
-        System.out.println(this.name);
-        System.out.println(" ");
-        System.out.println(this.demand);
+
+    public void info() {
+        System.out.print(this.name + ' ');
+        System.out.print(this.demand);
         System.out.println(" ");
 
     }
+
 }
